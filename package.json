@@ -24,6 +24,8 @@
     "supertest": "^1.1.0"
   },
   "devDependencies": {},
-  "scripts": {},
+  "scripts": {
+    "test": "NODE_ENV=test mocha test/lib"
+   },
   "license": "MIT License"
 }
