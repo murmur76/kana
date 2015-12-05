@@ -20,7 +20,7 @@
     "supertest": "^1.1.0"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha test/lib"
+    "test": "NODE_ENV=kana mocha test/lib"
    },
   "license": "MIT License"
 }
