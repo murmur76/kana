@@ -18,12 +18,13 @@
   },
   "dependencies": {
     "co": "^4.6.0",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
     "express": "^4.13.3",
-    "lodash": "^3.10.1",
     "mocha": "^2.3.4",
     "supertest": "^1.1.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "NODE_ENV=test mocha test/lib"
    },
