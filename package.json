@@ -3,12 +3,6 @@
   "version": "0.0.4",
   "description": "The right way for building a node.js web application.",
   "author": "Dong Ju Kang <celica212@gmail.com>",
-  "contributors": [
-    {
-      "name": "Dong Ju Kang",
-      "email": "celica212@company100.com"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/murmur76/kana"
