@@ -10,7 +10,7 @@ describe('function', () => {
     params: { userId: 1 },
     query: { age: 21 }
   };
-  let res = { send: _.identity };
+  let res = { json: _.identity };
   let next = () => {};
 
   describe('#generatorToCallback', () => {
