@@ -17,7 +17,8 @@
     "url": "https://github.com/murmur76/kana/issues"
   },
   "dependencies": {
-    "co": "^4.6.0"
+    "co": "^4.6.0",
+    "lodash": "^3.10.1"
   },
   "devDependencies": {},
   "scripts": {},
