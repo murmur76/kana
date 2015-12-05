@@ -166,6 +166,28 @@ For ORM, `kana.js` doesn't restrict you to choose specific ORM framework.
 You can choose whatever you want as long as it supports [Promise] interface.
 <br/>
 <br/>
+
+### 5. Throw Exception
+`kana.js` supports basic exceptions like `BadRequest`, `NotFound`, `Forbidden`, `InternalError`.
+<br/>
+They all inherits parent class `Exception`.
+<br/>
+So you can basically define any custom exception class like below.
+```js
+const Exception = require('kana/lib/exception').Exception;
+
+class CustomException extends Exception {
+  constructor(msg) {
+    super(msg);
+    this.status = 777;
+  }
+}
+
+module.exports = CustomException;
+```
+<br/>
+<br/>
+
 And that's it. Enjoy your programming!
 
 [Promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise 
