@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "co": "^4.6.0",
+    "express": "^4.13.3",
     "lodash": "^3.10.1",
     "mocha": "^2.3.4"
   },
