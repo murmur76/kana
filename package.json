@@ -17,10 +17,9 @@
     "url": "https://github.com/murmur76/kana/issues"
   },
   "dependencies": {
+    "co": "^4.6.0"
   },
-  "devDependencies": {
-  },
-  "scripts": {
-  },
+  "devDependencies": {},
+  "scripts": {},
   "license": "MIT License"
 }
