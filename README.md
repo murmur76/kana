@@ -38,16 +38,14 @@ module.exports = {
   show: function (req, res) {
     User.findById(req.params.userId, (err, user) => {
       if (err) {
-        res.statusCode = 500;
-        res.send();
+        return res.status(500).send();
       }
       if (!user) {
-        res.statusCode = 404;
-        res.send({ message: 'User Not Found' });
+        return res.status(404).send({ message: 'User Not Found' });
       }
       res.send({ result: user.toJSON() });
     });
-  },
+  }
 };
 ```
 So much things to take care of!!
@@ -115,12 +113,10 @@ Router.bindRoute(app);
 app.use((err, req, res, next) => {
   if (!err) return next();
   if (err instanceof Exception) {
-    res.statusCode = err.status;
-    res.send(err);
+    res.status(err.status).send(err);
   } else {
     console.log(err.stack);
-    res.statusCode = 500;
-    res.send();
+    res.status(500).send();
   }
 });
 ```
