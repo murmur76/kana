@@ -1,8 +1,15 @@
 {
   "name": "kana",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The right way for building a node.js web application.",
   "author": "Dong Ju Kang <celica212@gmail.com>",
+  "keywords": [
+    "express",
+    "sails",
+    "generator",
+    "promise",
+    "coroutine"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/murmur76/kana"
@@ -22,5 +29,5 @@
   "scripts": {
     "test": "NODE_ENV=kana mocha test/lib"
    },
-  "license": "MIT License"
+  "license": "MIT"
 }
